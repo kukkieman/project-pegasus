@@ -1,2 +1,9 @@
 # project-pegasus
-It's something which you have never seen before!
+
+Music Tiles game in C using raylib.h and CMake.
+
+# TO DO:
+
+- Menu
+- High Score
+- Speed Change
