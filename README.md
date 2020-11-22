@@ -8,6 +8,7 @@ Music Tiles game in C using raylib.h and CMake.
 - High Score
 - Speed Change
 - Retrowave design
+- Music Fix
 
 # Pre Build Instructions:
 
