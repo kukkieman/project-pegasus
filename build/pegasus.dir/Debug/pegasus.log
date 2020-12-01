@@ -1,0 +1,25 @@
+﻿  Building Custom Rule E:/Development/GitDirectory/project-pegasus/CMakeLists.txt
+  main.c
+E:\Development\GitDirectory\project-pegasus\main.c(242): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+E:\Development\GitDirectory\project-pegasus\main.c(255): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+E:\Development\GitDirectory\project-pegasus\main.c(333): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
+E:\Development\GitDirectory\project-pegasus\main.c(392): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+E:\Development\GitDirectory\project-pegasus\main.c(393): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+E:\Development\GitDirectory\project-pegasus\main.c(394): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+E:\Development\GitDirectory\project-pegasus\main.c(395): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+E:\Development\GitDirectory\project-pegasus\main.c(402): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+E:\Development\GitDirectory\project-pegasus\main.c(403): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+E:\Development\GitDirectory\project-pegasus\main.c(404): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+E:\Development\GitDirectory\project-pegasus\main.c(405): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+E:\Development\GitDirectory\project-pegasus\main.c(412): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+E:\Development\GitDirectory\project-pegasus\main.c(413): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+E:\Development\GitDirectory\project-pegasus\main.c(422): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+E:\Development\GitDirectory\project-pegasus\main.c(377): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+E:\Development\GitDirectory\project-pegasus\main.c(378): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+E:\Development\GitDirectory\project-pegasus\main.c(384): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+E:\Development\GitDirectory\project-pegasus\main.c(385): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  list.c
+  sound.c
+  Generating Code...
+  pegasus.vcxproj -> E:\Development\GitDirectory\project-pegasus\build\Debug\pegasus.exe

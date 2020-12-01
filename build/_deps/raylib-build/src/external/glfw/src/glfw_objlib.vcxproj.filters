@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\src\context.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\src\init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\src\input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\src\monitor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\src\vulkan.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\src\window.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\src\win32_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\src\win32_joystick.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\src\win32_monitor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\src\win32_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\src\win32_thread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\src\win32_window.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\src\wgl_context.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\src\egl_context.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\src\osmesa_context.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\src\internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\src\mappings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-build\src\external\glfw\src\glfw_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\include\GLFW\glfw3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\include\GLFW\glfw3native.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\src\win32_platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\src\win32_joystick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\src\wgl_context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\src\egl_context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\src\osmesa_context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-src\src\external\glfw\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{576A82BB-75A4-3E43-98F3-29B24019DAE5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E895D7C9-96D9-3359-9F3E-A209E032E5BE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

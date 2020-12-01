@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-subbuild\CMakeFiles\087854b28696e722705c248fff9e4bea\raylib-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-subbuild\CMakeFiles\087854b28696e722705c248fff9e4bea\raylib-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-subbuild\CMakeFiles\087854b28696e722705c248fff9e4bea\raylib-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-subbuild\CMakeFiles\087854b28696e722705c248fff9e4bea\raylib-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-subbuild\CMakeFiles\087854b28696e722705c248fff9e4bea\raylib-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-subbuild\CMakeFiles\087854b28696e722705c248fff9e4bea\raylib-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-subbuild\CMakeFiles\087854b28696e722705c248fff9e4bea\raylib-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-subbuild\CMakeFiles\087854b28696e722705c248fff9e4bea\raylib-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-subbuild\CMakeFiles\5f58c2aa4f6586fbe2e4c8e00c8e62af\raylib-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-subbuild\CMakeFiles\5f7b7dc400d05a38c5fa888286422ac5\raylib-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\Development\GitDirectory\project-pegasus\build\_deps\raylib-subbuild\CMakeFiles\raylib-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{863BE251-7BB1-30CD-BAF1-0CC0F26C2FAA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

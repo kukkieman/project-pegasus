@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "E:/Development/GitDirectory/project-pegasus/build/_deps/raylib-subbuild/CMakeFiles/raylib-populate"
+		},
+		{
+			"file" : "E:/Development/GitDirectory/project-pegasus/build/_deps/raylib-subbuild/CMakeFiles/5f7b7dc400d05a38c5fa888286422ac5/raylib-populate.rule"
+		},
+		{
+			"file" : "E:/Development/GitDirectory/project-pegasus/build/_deps/raylib-subbuild/CMakeFiles/5f58c2aa4f6586fbe2e4c8e00c8e62af/raylib-populate-complete.rule"
+		},
+		{
+			"file" : "E:/Development/GitDirectory/project-pegasus/build/_deps/raylib-subbuild/CMakeFiles/087854b28696e722705c248fff9e4bea/raylib-populate-install.rule"
+		},
+		{
+			"file" : "E:/Development/GitDirectory/project-pegasus/build/_deps/raylib-subbuild/CMakeFiles/087854b28696e722705c248fff9e4bea/raylib-populate-mkdir.rule"
+		},
+		{
+			"file" : "E:/Development/GitDirectory/project-pegasus/build/_deps/raylib-subbuild/CMakeFiles/087854b28696e722705c248fff9e4bea/raylib-populate-download.rule"
+		},
+		{
+			"file" : "E:/Development/GitDirectory/project-pegasus/build/_deps/raylib-subbuild/CMakeFiles/087854b28696e722705c248fff9e4bea/raylib-populate-update.rule"
+		},
+		{
+			"file" : "E:/Development/GitDirectory/project-pegasus/build/_deps/raylib-subbuild/CMakeFiles/087854b28696e722705c248fff9e4bea/raylib-populate-patch.rule"
+		},
+		{
+			"file" : "E:/Development/GitDirectory/project-pegasus/build/_deps/raylib-subbuild/CMakeFiles/087854b28696e722705c248fff9e4bea/raylib-populate-configure.rule"
+		},
+		{
+			"file" : "E:/Development/GitDirectory/project-pegasus/build/_deps/raylib-subbuild/CMakeFiles/087854b28696e722705c248fff9e4bea/raylib-populate-build.rule"
+		},
+		{
+			"file" : "E:/Development/GitDirectory/project-pegasus/build/_deps/raylib-subbuild/CMakeFiles/087854b28696e722705c248fff9e4bea/raylib-populate-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"raylib-populate"
+		],
+		"name" : "raylib-populate"
+	}
+}

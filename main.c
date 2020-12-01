@@ -28,7 +28,7 @@
 
 #define MUSIC_NOTE_WIDTH                                                          LINE_WIDTH
 #define MUSIC_NOTE_HEIGHT                                                                160
-#define MUSIC_NOTE_INIT_COLOR                                                       DARKGRAY
+#define MUSIC_NOTE_INIT_COLOR														  MAGENTA
 #define MUSIC_NOTE_AREA                                 MUSIC_NOTE_WIDTH * MUSIC_NOTE_HEIGHT
 #define INIT_MUSIC_NOTE_SPEED                                                              5
 
@@ -40,21 +40,21 @@
 #define TOUCH_BLOCK_OK_TOLERANCE                                                        0.6f
 #define TOUCH_BLOCK_BAD_TOLERANCE                                                      0.01f
 #define TOUCH_BLOCK_FONT_SIZE                                                             20
-#define TOUCH_BLOCK_INIT_COLOR                                                         BLACK
-#define TOUCH_BLOCK_FONT_COLOR                                                          GRAY
+#define TOUCH_BLOCK_INIT_COLOR                                                      DARKBLUE
+#define TOUCH_BLOCK_FONT_COLOR														   WHITE
 #define TOUCH_BLOCK_PERFECT_COLOR                                                      GREEN
 #define TOUCH_BLOCK_OK_COLOR                                                         SKYBLUE
 #define TOUCH_BLOCK_BAD_COLOR                                                         ORANGE
 #define TOUCH_BLOCK_MISTOUCH_COLOR                                                       RED
 
-#define SIDE_LINE_COLOR                                                                BLACK
-#define SIDE_LINE_WIDTH                                                                    1
+#define SIDE_LINE_COLOR																   WHITE
+#define SIDE_LINE_WIDTH                                                                    2
 
 #define UI_FONT_COLOR                                                                  BLACK
 #define UI_FONT_SIZE                                                                      20
-#define MISSED_FONT_COLOR                                                           DARKGRAY
+#define MISSED_FONT_COLOR																 RED
 #define MISSED_FONT_SIZE                                                                  20
-#define SCORE_FONT_COLOR                                                                GRAY
+#define SCORE_FONT_COLOR                                                               WHITE
 #define SCORE_FONT_SIZE                                                                   22
 
 #define UI_MARGIN                                                                          5
@@ -124,7 +124,7 @@ typedef struct{
 // ------ GLOBAL VARIABLES ------
 const int LEFT_MARGIN = (SCREEN_WIDTH - (LINE_WIDTH * LINE) - (MARGIN_BETWEEN_LINE * (LINE - 1))) / 2;
 const int RIGHT_MARGIN = (SCREEN_WIDTH - (LINE_WIDTH * LINE) - (MARGIN_BETWEEN_LINE * (LINE - 1))) / 2;
-const static KeyboardKey TOUCH_BLOCK_KEYS[LINE] = { KEY_H, KEY_J, KEY_K, KEY_L };
+const static KeyboardKey TOUCH_BLOCK_KEYS[LINE] = { KEY_A, KEY_S, KEY_D, KEY_F };
 
 static TouchBlock touch_blocks[LINE] = { 0 };
 static List music_note_lists[LINE] = { 0 };
@@ -164,9 +164,9 @@ float rect_intersect_area(Rectangle a, Rectangle b){
 }
 
 // get the music note drop speed now
-// float speed_now(){
-//     return INIT_MUSIC_NOTE_SPEED + (frame_counter / 3000.0f);
-// }
+ float speed_now(){
+     return INIT_MUSIC_NOTE_SPEED + (frame_counter / 3000.0f);
+}
 
 
 // data will be copied
@@ -189,18 +189,20 @@ static bool register_at_frame(unsigned int frame, void(*f)(void*), void* data, s
 void __frame_register_set_touch_block_color(__frame_register_set_touch_block_color_t* data){
 	data->touch_block->color = data->color;
 }
-
+//Animate UP
 void __frame_register_animate_text(__frame_register_animate_text_t* data){
 	data->textbox->x += data->dx;
 	data->textbox->y += data->dy;
 }
 
+//Animate DOWN
 void __frame_register_drop_animate_text(__frame_register_drop_animate_text_t* data){
 	TextBox* textbox = (TextBox*)list_pop_node(&animation_texts, data->node);
 	free(textbox->text);
 	free(textbox);
 }
 
+//Register Animation
 void register_animate_text(unsigned int frame, const char* text, int fontsize, Color fontcolor, float start_x, float start_y){
 	TextBox textbox = {
 		.x = start_x,
@@ -255,7 +257,7 @@ void updateGame(){
 			.y = (highest_node == NULL) ? -MUSIC_NOTE_HEIGHT : ((MusicNote*)highest_node->data)->y - MUSIC_NOTE_HEIGHT,
 			.width = MUSIC_NOTE_WIDTH,
 			.height = MUSIC_NOTE_HEIGHT,
-			//.speed = speed_now(),
+			.speed = speed_now(),
 			.color = MUSIC_NOTE_INIT_COLOR
 		};
 		list_append_tail(&music_note_lists[line], &music_note, sizeof(MusicNote));
@@ -267,7 +269,7 @@ void updateGame(){
 		for (ListNode* node = music_note_lists[line].head; node != NULL; node = node->prev){
 			MusicNote* music_note = ((MusicNote*)node->data);
 			if (music_note->y > SCREEN_HEIGHT){
-				//register_animate_text(frame_counter + 1, "Missed", MISSED_FONT_SIZE, MISSED_FONT_COLOR, music_note->x, SCREEN_HEIGHT - MISSED_FONT_SIZE);
+				register_animate_text(frame_counter + 1, "Missed", MISSED_FONT_SIZE, MISSED_FONT_COLOR, music_note->x, SCREEN_HEIGHT - MISSED_FONT_SIZE);
 				free(list_pop_node(&music_note_lists[line], node));
 				miss += 1;
 				break;
@@ -330,7 +332,7 @@ void updateGame(){
 				PlayPianoNote((PianoNote)GetRandomValue(DO, LA));
         sprintf(buffer, "+%d", score_increment);
         score += score_increment;
-        //register_animate_text(frame_counter + 1, buffer, SCORE_FONT_SIZE, SCORE_FONT_COLOR, touch_blocks[line].x, touch_blocks[line].y);
+        register_animate_text(frame_counter + 1, buffer, SCORE_FONT_SIZE, SCORE_FONT_COLOR, touch_blocks[line].x, touch_blocks[line].y);
       } else {
 				touch_blocks[line].color = TOUCH_BLOCK_MISTOUCH_COLOR;
       }
@@ -365,7 +367,7 @@ void updateGame(){
 
 void drawGame(){
 	BeginDrawing();
-	ClearBackground(RAYWHITE);
+	ClearBackground(SKYBLUE);
 
 	// --- all lines' sides ---
 	for (int line = 0; line < LINE; ++line){
@@ -423,7 +425,7 @@ void drawGame(){
 	// --- text of upper-left corner ---
 	DrawText(TextFormat("SCORE: %d", score), UI_MARGIN, UI_MARGIN, UI_FONT_SIZE, BLACK);
 	DrawText(TextFormat("MISS: %d", miss), UI_MARGIN, UI_MARGIN + UI_FONT_SIZE, UI_FONT_SIZE, BLACK);
-	//DrawText(TextFormat("SPEED: %.1f", speed_now()), UI_MARGIN, UI_MARGIN + UI_FONT_SIZE * 2, UI_FONT_SIZE, BLACK);
+	DrawText(TextFormat("SPEED: %.1f", speed_now()), UI_MARGIN, UI_MARGIN + UI_FONT_SIZE * 2, UI_FONT_SIZE, BLACK);
 
 	EndDrawing();
 }
@@ -440,13 +442,16 @@ int main(){
 	InitAudioDevice();
 	InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, WINDOW_TITLE);
 	SetTargetFPS(60);
+	
 	initGame();
 	while(!WindowShouldClose()){
 		updateGame();
 		drawGame();
 	}
 	endGame();
-	CloseWindow();
+
+
 	CloseAudioDevice();
+	CloseWindow();
 	return EXIT_SUCCESS;
 }
