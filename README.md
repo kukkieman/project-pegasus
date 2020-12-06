@@ -13,5 +13,5 @@ Music Tiles game in C & C++ using raylib.h and CMake
 - Download ZIP & extract
 - Using cmake-gui, specify library and build directory path. (Advised to create the build folder inside the library.)
 - Generate for VS Code 15 2017
-- Build solution
+- Build solution in VS Code
 - Navigate to Debug folder inside Build and run
