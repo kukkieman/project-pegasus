@@ -6,7 +6,6 @@ Music Tiles game in C & C++ using raylib.h and CMake
 
 - Menu
 - High Score
-- Retrowave design
 - Music Fix
 
 # Pre Build Instructions:
