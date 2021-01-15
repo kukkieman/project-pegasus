@@ -2,12 +2,6 @@
 
 Music Tiles game in C & C++ using raylib.h and CMake
 
-# TO DO:
-
-- Menu
-- High Score
-- Music Fix
-
 # Pre Build Instructions:
 
 - Download ZIP & extract
